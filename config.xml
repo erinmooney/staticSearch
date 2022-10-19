@@ -45,7 +45,7 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
-        <context match="description[contains-token(@class,'resp')]"/>
+ 
     </contexts>
     
     <excludes>
