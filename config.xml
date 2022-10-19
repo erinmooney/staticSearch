@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://hcmc.uvic.ca/ns/staticSearch" version="2">
+
+    <meta name="Colors"
+        class="staticSearch_feat" content="red"/>
+    <meta name="Shapes"
+        class="staticSearch_feat" content=""/>
+    
+
     <params>
-        <searchFile>C:\Users\Erin Mooney\Documents\GitHub\Storybook\docs</searchFile>
-        <versionFile>C:\Users\Erin Mooney\Documents\GitHub\Storybook\docs</versionFile>
+        <searchFile>/home/emoon/Elder_Scrolls_Morrowind/docs</searchFile>
+        <versionFile>/home/emoon/Elder_Scrolls_Morrowind/docs</versionFile>
         <recurse>true<!--Need to set recurse to true for the test--></recurse>
         <phrasalSearch>true</phrasalSearch>
         <wildcardSearch>true</wildcardSearch>
         <createContexts>true</createContexts>
         <resultsPerPage>5</resultsPerPage>
         <minWordLength>2</minWordLength>
-        <!--NOTE: If phrasalSearch is set to TRUE, then
-        maxContexts prop will be ignored-->
+<!--NOTE: If phrasalSearch is set to TRUE, then maxContexts prop will be ignored-->
         <maxKwicsToHarvest>5</maxKwicsToHarvest>
         <maxKwicsToShow>5</maxKwicsToShow>
         <totalKwicLength>15</totalKwicLength>
@@ -19,7 +25,7 @@
         <dictionaryFile>xsl/english_words.txt</dictionaryFile>
         <outputFolder>ssTest</outputFolder>
     </params>
-    
+ 
     <rules>
         <rule weight="2"
             match="h1 | h2"/>
@@ -27,6 +33,8 @@
             match="span[@class='lineNum']"/>
         <rule weight="0"
             match="script | style"/>
+<!-- Where the wild things are -->
+        
     </rules>
     
     <contexts>
@@ -36,11 +44,15 @@
             label="Notes"/>
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
+<!-- Where the wild things are -->
+        <context match="description[contains-token(@class,'resp')]"/>
     </contexts>
     
     <excludes>
         <exclude type="index" match="html[@id='excluded']"/>
         <exclude match="meta[contains-token(@class,'excludedMeta')]" type="filter"/>
+<!-- Where the wild things are -->
+        
     </excludes>
     
 </config>
