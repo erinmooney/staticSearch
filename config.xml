@@ -52,6 +52,7 @@
         <exclude type="index" match="html[@id='excluded']"/>
         <exclude match="meta[contains-token(@class,'excludedMeta')]" type="filter"/>
 <!-- Where the wild things are -->
+        <exclude match="html[@img='excluded']"></exclude>
         
     </excludes>
     
