@@ -34,7 +34,9 @@
         <rule weight="0"
             match="script | style"/>
 <!-- Where the wild things are -->
-        
+        <rule weight="2" match="section[@id='content']"/>
+        <rule weight="0" match="div[@class=‘nav’]"/>
+                
     </rules>
     
     <contexts>
@@ -45,15 +47,14 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
- 
+        <context match="p"/>
     </contexts>
     
     <excludes>
         <exclude type="index" match="html[@id='excluded']"/>
         <exclude match="meta[contains-token(@class,'excludedMeta')]" type="filter"/>
 <!-- Where the wild things are -->
-        <exclude match="html[@img='excluded']"></exclude>
-        
+        <exclude match="html[@img='excluded']"></exclude>  
     </excludes>
     
 </config>
