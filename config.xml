@@ -43,6 +43,10 @@
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
         <context match="p"/>
+        <context match="color"/>
+        <context match="shape"/>
+        <context match="nature"/>
+        <context match="page"/>
     </contexts>
     
     <excludes>
