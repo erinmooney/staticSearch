@@ -27,7 +27,7 @@
         <rule weight="0" match="script | style"/>
 <!-- Where the wild things are -->
         <rule weight="2" match="section[@id='content']"/>
-        <rule weight="0" match="div[@class=‘nav’]"/>
+       <!-- <rule weight="0" match="div[@class=‘nav’]"/>-->
         
     </rules>
     
