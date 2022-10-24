@@ -3,8 +3,8 @@
     
 
     <params>
-        <searchFile>/home/emoon/Storybook/docs</searchFile>
-        <versionFile>/home/emoon/Storybook/docs</versionFile>
+        <searchFile>/home/emoon/Elder_Scrolls_Morrowind/docs/search.html</searchFile>
+        <versionFile>/home/emoon/Elder_Scrolls_Morrowind/docs/VERSION</versionFile>
         <recurse>true<!--Need to set recurse to true for the test--></recurse>
         <phrasalSearch>true</phrasalSearch>
         <wildcardSearch>true</wildcardSearch>
@@ -42,7 +42,7 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
-       <!-- <context match="p" label="Text"/>
+       <!-- <context match="p[span]" label="Text"/>
         <context match="color" label="Description"/>
         <context match="shape" label="Description"/>
         <context match="nature" label="Description"/>
