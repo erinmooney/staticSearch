@@ -29,8 +29,8 @@
         <rule weight="0"
             match="script | style"/>
 <!-- Where the wild things are -->
-        <rule weight="2" match="section[@id='content']"/>
-        <rule weight="0" match="div[@class=‘nav’]"/>
+        <!--<rule weight="2" match="section[@id='content']"/>
+        <rule weight="0" match="div[@class=‘nav’]"/>-->
         
     </rules>
     
@@ -42,11 +42,11 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
-        <context match="p"/>
-        <context match="color"/>
-        <context match="shape"/>
-        <context match="nature"/>
-        <context match="page"/>
+        <context match="p" label="Text"/>
+        <context match="color" label="Description"/>
+        <context match="shape" label="Description"/>
+        <context match="nature" label="Description"/>
+        <context match="page" label="Text"/>
     </contexts>
     
     <excludes>
