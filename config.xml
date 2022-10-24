@@ -42,18 +42,18 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
-        <context match="p" label="Text"/>
+       <!-- <context match="p" label="Text"/>
         <context match="color" label="Description"/>
         <context match="shape" label="Description"/>
         <context match="nature" label="Description"/>
-        <context match="page" label="Text"/>
+        <context match="page" label="Text"/>-->
     </contexts>
     
     <excludes>
         <exclude type="index" match="html[@id='excluded']"/>
         <exclude match="meta[contains-token(@class,'excludedMeta')]" type="filter"/>
 <!-- Where the wild things are -->
-        <exclude match="html[@img='excluded']"></exclude>  
+       <!-- <exclude match="html[@img='excluded']"/>  -->
     </excludes>
     
 </config>
