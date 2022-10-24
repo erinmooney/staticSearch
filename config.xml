@@ -3,8 +3,8 @@
     
 
     <params>
-        <searchFile>/home/emoon/Elder_Scrolls_Morrowind/docs/search.html</searchFile>
-        <versionFile>/home/emoon/Elder_Scrolls_Morrowind/docs/VERSION</versionFile>
+        <searchFile>/home/emoon/Elder_Scrolls_Morrowind/docs</searchFile>
+        <versionFile>/home/emoon/Elder_Scrolls_Morrowind/docs</versionFile>
         <recurse>true<!--Need to set recurse to true for the test--></recurse>
         <phrasalSearch>true</phrasalSearch>
         <wildcardSearch>true</wildcardSearch>
@@ -22,15 +22,12 @@
     </params>
  
     <rules>
-        <rule weight="2"
-            match="h1 | h2"/>
-        <rule weight="0"
-            match="span[@class='lineNum']"/>
-        <rule weight="0"
-            match="script | style"/>
+        <rule weight="2" match="p"/>
+        <rule weight="0" match="span[@class='lineNum']"/>
+        <rule weight="0" match="script | style"/>
 <!-- Where the wild things are -->
-        <!--<rule weight="2" match="section[@id='content']"/>
-        <rule weight="0" match="div[@class=‘nav’]"/>-->
+        <rule weight="2" match="section[@id='content']"/>
+        <rule weight="0" match="div[@class=‘nav’]"/>
         
     </rules>
     
@@ -42,11 +39,11 @@
         <context match="cite" label="Citations"/>
         <context match="p[contains-token(@class,'citation')]" label="Citations"/>
 <!-- Where the wild things are -->
-       <!-- <context match="p[span]" label="Text"/>
-        <context match="color" label="Description"/>
+        <context match="p[span]" label="Text"/>
+        <!-- <context match="color" label="Description"/>
         <context match="shape" label="Description"/>
         <context match="nature" label="Description"/>
-        <context match="page" label="Text"/>-->
+        <context match="page" label="Text"/> -->
     </contexts>
     
     <excludes>
