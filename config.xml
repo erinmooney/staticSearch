@@ -3,8 +3,10 @@
     
 
     <params>
-        <searchFile>/home/emoon/Storybook/docs</searchFile>
-        <versionFile>/home/emoon/Storybook/docs</versionFile>
+        <searchFile>/c/Users/Erin Mooney/Documents/GitHub/Elder_Scrolls_Morrowind/docs
+        </searchFile>
+        <versionFile>/c/Users/Erin Mooney/Documents/GitHub/Elder_Scrolls_Morrowind/docs
+        </versionFile>
         <recurse>true<!--Need to set recurse to true for the test--></recurse>
         <phrasalSearch>true</phrasalSearch>
         <wildcardSearch>true</wildcardSearch>
@@ -31,7 +33,7 @@
 <!-- Where the wild things are -->
         <rule weight="2" match="section[@id='content']"/>
         <rule weight="0" match="div[@class=‘nav’]"/>
-                
+        
     </rules>
     
     <contexts>
