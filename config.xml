@@ -3,8 +3,8 @@
     
 
     <params>
-        <searchFile>C:\Users\Erin Mooney\Documents\GitHub\Storybook\docs</searchFile>
-        <versionFile>C:\Users\Erin Mooney\Documents\GitHub\Storybook\docs</versionFile>
+        <searchFile>/home/emoon/Storybook/docs</searchFile>
+        <versionFile>/home/emoon/Storybook/docs</versionFile>
         <recurse>true<!--Need to set recurse to true for the test--></recurse>
         <phrasalSearch>true</phrasalSearch>
         <wildcardSearch>true</wildcardSearch>
