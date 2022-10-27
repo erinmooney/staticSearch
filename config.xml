@@ -38,11 +38,13 @@
         <context match="span[@class='note'] | *[contains-token(@class,'sidenotes')]"
             label="Notes"/>
         <context match="cite" label="Citations"/>
-        <context match="p[contains-token(@class,'citation')]" label="Citations"/>
+        <!--<context match="p[contains-token(@class,'citation')]" label="Citations"/>-->
 <!-- Where the wild things are -->
         <context match="p[span]" label="Text"/>
         
-        <context match="span[@class='group']" label="Groups"/>
+        <context match="span[@class='gods']" label="Religon"/>
+        <context match="span[@class='NPC']" label="NPCs"/>
+        <context match="span[@class='narration']" label="Narration"/>
         <context match="span[@class='person']" label="People"/>
         <context match="span[@class='location']" label="Places"/>
         <context match="p[span]" label="Paragraphs"/>
